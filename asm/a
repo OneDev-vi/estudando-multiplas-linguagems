@@ -1,0 +1,9 @@
+section .text
+global main
+main:
+    mov ebp, esp
+    
+    
+    mov esp, ebp
+    xor eax, eax
+    ret

@@ -1,0 +1,14 @@
+exemplo:nome do arquivo
+
+Compilar o código Assembly com o NASM
+nasm -f elf64 exemplo.asm -o exemplo.o
+
+
+Linkar o código para criar o executável
+ld -o exemplo exemplo.o
+
+Esse comando cria um arquivo executável chamado exemplo
+gcc -nostartfiles -o exemplo exemplo.o
+
+para executar basta:
+./exemplo

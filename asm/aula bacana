@@ -1,0 +1,15 @@
+section .data
+array db 0x98, 0x76, 0x65, 0x43, 0x21, 0x0
+
+
+section .text
+global main
+main:
+    mov ebp, esp; for correct debugging
+    
+    mov al, [array + 3]
+    movzx eax, al  
+    
+    mov esp, ebp
+    xor eax, eax
+    ret
